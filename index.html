@@ -1,0 +1,879 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="HandheldFriendly" content="True" />
+        <meta name="MobileOptimized" content="320"/>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta http-equiv="cleartype" content="on" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+        <style type="text/css">
+            .ui-btn-up-backbutton, .ui-btn-hover-backbutton, .ui-btn-down-backbutton {
+                background-size: 48px 30px;
+                background-repeat: no-repeat;
+                background-position: center;
+                padding-left:10px;
+                border:0px;
+                min-width:48px;
+                min-height:30px;
+            }
+
+            .ui-btn-up-backbutton {
+                background-image:url('images/back_button.png');
+            }
+
+            .ui-btn-hover-backbutton {
+                background-image:url('images/back_button_hover.png');
+            }
+
+            .ui-btn-down-backbutton
+            {
+                background-image:url('images/back_button_down.png');
+            }
+
+
+            .menu_text {
+                font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+                font-weight: 300;
+                color: #666;
+                font-size: 1.3em;
+            }
+
+            h3 h4 {
+                font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+                font-weight: 300;
+                color: #999;
+            }
+
+            h1.logo {
+                background-image: url('images/small_logo_deloitte@2x.png');
+                background-size: 75px 16px;
+                background-repeat: no-repeat;
+                background-position: center;
+                text-indent: -1000em;
+            }
+
+            @font-face {
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 300;
+                src: url('css/fonts/opensans-light-no.woff');
+            }
+
+            .menu_icon {
+                vertical-align: middle;
+                margin-right: 8px;    
+                padding-right:10px; 
+                padding-left:10px;      
+            }   
+            /*
+            @font-face {
+              font-family: 'Open Sans';
+              font-style: normal;
+              font-weight: 400;
+               src: url('css/fonts/OpenSans-Regular.ttf');
+            }
+            */
+        </style>
+        <link rel="shortcut icon" href="images/logo/app_icon/Icon.png" />
+        <link rel="apple-touch-icon" href="images/logo/app_icon/Icon.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="images/logo/app_icon/Icon-72.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="images/logo/app_icon/Icon-72@2x.png" />
+        <link rel="apple-touch-startup-image" href="images/logo/startup_iphone.png" media="screen and (max-device-width: 320px)" />
+        <link rel="apple-touch-startup-image" href="images/logo/startup_iphone@2x.png" media="(device-width: 320px) and (-webkit-device-pixel-ratio: 2)"  />
+        <link rel="apple-touch-startup-image" href="images/logo/startup_ipad_v@2x.png" media="(device-width: 768px) and (orientation: portrait)" />
+        <link rel="apple-touch-startup-image" href="images/logo/startup_ipad_h@2x.png" media="(device-width: 768px) and (orientation: landscape)" />
+
+
+        <title>Deloitte Norway Expat Guide</title>
+        <link rel="stylesheet" href="css/jquery.mobile-1.3.0.min.css" />
+        <link rel="stylesheet" href="css/deloitte.css" />
+        <script src="js/jquery-1.9.1.min.js"></script>
+        <script src="js/jshashtable-2.1.js"></script>
+        <script src="js/jquery.numberformatter-1.2.3.min.js"></script>
+        <script src="js/jquery.mobile-1.3.0.min.js"></script>
+    </head>
+    <body>
+        <!-- end menu-->
+        <div data-role="page" id="home" >
+            <div data-role="header" id="homeheader" data-theme="a" data-position="fixed" data-tap-toggle="false" data-id="stickyheader">
+                <h1 class="logo">Deloitte - Arbeidsrett</h1>
+
+            </div>
+
+
+
+            <div data-role="content">
+
+
+                <p>Choose your language</p><br />
+              
+      
+                <ul data-role="listview" data-theme="a">
+                    <li><a href="#norwegian" data-transition="slidefade">
+                            <h3>Norwegian</h3>
+                    </a></li>
+
+                    <li><a href="#english" data-transition="slidefade">
+                            <h3>English</h3>
+                    </a></li>
+
+
+                    <li><a href="#contact" data-transition="slidefade">
+                            <h3>Contact</h3>
+                    </a></li>
+                </ul>
+
+                <br>
+                <p align="center"><img src="images/Deloitte-200x37.png" alt="Deloitte" width="100" height="19" /></p>
+                <p align="center"><a href="#disclaimer" data-transition="slidefade">Disclaimer</a></p>
+
+            </div><!-- / content -->
+
+
+        </div><!-- / page -->
+
+
+
+        <!-- 1 - NORSK -->
+
+
+
+        <div data-role="page" id="norwegian" title="Working in Norway">
+
+            <!--	
+            <div data-theme="b" data-role="header" data-position="fixed">
+                    <h1>Fixed Header!</h1>
+            </div>
+            -->
+
+            <!--<div class="flexheader"></div>-->
+
+            <div data-role="header" data-theme="a" data-position="fixed" data-tap-toggle="false" data-id="stickyheader"> 
+                <h1 class="logo">&nbsp;</h1>
+            </div>
+
+            <div data-role="content">
+                
+
+                <br />
+                <ul data-role="listview" data-theme="a">	
+
+                    <li><a href="#no_ansettelse" data-transition="slide">
+                            <h3>Ansettelse</h3>
+                        </a></li>       
+
+                    <li><a href="#no_arbeidskontrakt" data-transition="slide">
+                            <h3>Arbeidskontrakt</h3>
+                            <p>Krav til innhold</p>
+                        </a></li>    
+                    
+                    <li><a href="#no_arbeidstid" data-transition="slide">
+                            <h3>Arbeidstid</h3>
+                        </a></li>
+
+                    <li><a href="#no_vikarbyradirektivet" data-transition="slide">
+                            <h3>Innleie av arbeidskraft</h3>
+                        </a></li>      
+
+                    <!--<li><a href="#no_permittering" data-transition="slide"> 
+                            <h3>Permittering</h3>
+                        </a></li>-->
+
+                      <li><a href="#no_oppsigelse" data-transition="slide">
+                            <h3>Oppsigelse</h3>
+                        </a></li>                                                           
+
+                    <li><a href="#no_avskjed" data-transition="slide">
+                            <h3>Avskjed</h3>
+                        </a></li>                       
+
+                </ul>
+
+            </div><!-- /content -->
+
+        </div> <!-- close page -->
+
+
+
+
+
+
+        <!-- 1.1 ARBEIDSTID -->
+
+
+
+        <div data-role="page" id="no_arbeidstid" title="Arbeidstid">
+
+            <div data-role="header" data-theme="a" data-position="fixed" data-tap-toggle="false" data-id="stickyheader"> 
+                <h1 class="logo">&nbsp;</h1>
+            </div>
+
+            <div data-role="content">
+                <h3>Arbeidstid</h3>
+
+                <br />
+                <ul>	
+
+                  <li>Den alminnelige arbeidstiden er som hovedregel 9 timer i løpet av 24 timer og 40 timer i løpet av sju dager, og skal i hovedsak utøves mellom klokken  06.00 og 21.00 mandag til fredag.</li>
+                  <li>Arbeid utover alminnelig arbeidstid anses som  overtid. Overtid skal kompenseres med minst 40 % overtidstillegg.</li>
+                  <li>Overtidsarbeid må ikke overstige 10 timer i  løpet av sju dager, 25 timer i løpet av fire sammenhengende uker og 200 timer i  løpet av 52 uker. I noen tilfeller kan rammene for overtidsarbeid utvides  ytterligere.</li>
+                  <li>Det kan etableres særskilte ordninger ved gjennomsnittsberegning av arbeidstid. </li>
+                  <li>Det kan etableres særskilte ordninger ved gjennomsnittsberegning av skiftarbeid.</li>
+                  <li>En arbeidstaker skal ha minst 11 timer  sammenhengende fri i løpet av 24 timer.</li>
+                  <li>I løpet av syv dager skal arbeidstaker ha en  sammenhengende arbeidsfri periode på minst 35 timer.</li>
+                  <li>Arbeidsgiver og arbeidstaker kan alltid avtale ordninger til fordel for arbeidstaker.</li>
+                  <li>Tariffavtaler kan gi føringer om virksomhetens arbeidstidsordninger.</li>
+                  <li>Arbeidsgiver skal ha et timeregistreringssystem.</li>
+
+                    
+                </ul>
+
+            </div><!-- /content -->
+
+        </div> <!-- close page -->
+
+
+
+        <!-- 1.1 ANSETTELSE -->
+
+        <div data-role="page" id="no_ansettelse" title="Ansettelse">
+
+            <div data-role="header" data-theme="a" data-position="fixed" data-tap-toggle="false" data-id="stickyheader"> 
+                <h1 class="logo">&nbsp;</h1>
+            </div>
+
+            <div data-role="content">
+                <h3>Ansettelse</h3>
+
+                <br />
+                <ul>    
+
+                <li>En arbeidstaker skal som hovedregel ansettes fast.</li>
+                <li>En arbeidstaker kan i nærmere angitte tilfeller ansettes midlertidig, eksempelvis i et vikariat.</li>
+                <li>En arbeidsgiver plikter som hovedregel å ha en tjenestepensjonsordning for sine arbeidstakere.</li>
+                <li>En arbeidsgiver plikter å ha en yrkesskadeforsikring for sine arbeidstakere.</li>
+                    
+                </ul>
+
+            </div><!-- /content -->
+
+        </div> <!-- close page -->
+
+
+    
+        <!-- 1.2 AVSKJED -->
+
+
+
+        <div data-role="page" id="no_avskjed" title="Avskjed">
+
+            <div data-role="header" data-theme="a" data-position="fixed" data-tap-toggle="false" data-id="stickyheader"> 
+                <h1 class="logo">&nbsp;</h1>
+            </div>
+
+            <div data-role="content">
+                <h3>Avskjed</h3>
+
+                <br />
+                <ul>
+                  <li>Ved vesentlig mislighold av arbeidsavtalen kan  arbeidsgiver gi en ansatt avskjed.</li>
+                  <li>Avskjedigelsen må være begrunnet i arbeidstakers  forhold.</li>
+                  <li>Det skal avholdes et drøftelsesmøte så langt det  er praktisk mulig.</li>
+                  <li>Avskjeden må være skriftlig og inneholde et minimum av informasjon til den ansatte, eksempelvis hvordan man skal gå frem dersom man er uenig i avskjeden. </li>
+                  <li>Avskjeden må gis til den ansatte personlig eller  ved rekommandert brev.</li>
+                  <li>Avskjeden skal gis til den ansatte innen rimelig  tid etter misligholdet har funnet sted.</li>
+                  <li>Arbeidstaker har normalt ikke rett til å stå i  stillingen ved tvist.</li>
+                  <li>Arbeidstakeren har krav på en attest. &nbsp;</li>
+
+
+                    
+                </ul>
+
+            </div><!-- /content -->
+
+        </div> <!-- close page -->
+
+
+
+
+
+        <!-- 1.3 ARBEIDSKONTRAKT -->
+
+
+
+        <div data-role="page" id="no_arbeidskontrakt" title="Arbeidskontrakt">
+
+            <div data-role="header" data-theme="a" data-position="fixed" data-tap-toggle="false" data-id="stickyheader"> 
+                <h1 class="logo">&nbsp;</h1>
+            </div>
+
+            <div data-role="content">
+                <h3>Arbeidskontrakt - krav til innhold</h3>
+
+                <p>En arbeidskontrakt bør være skriftlig og skal minst regulere:</p>
+                <br />
+                <ul>
+                  <li>Partenes identitet.</li>
+                  <li>Arbeidsplassens adresse. </li>
+                  <li>En beskrivelse av arbeidet eller arbeidstakers tittel, stilling eller arbeidskategori. </li>
+                  <li>Tidspunkt for arbeidsforholdet begynnelse. </li>
+                  <li>Forventet varighet dersom arbeidsforholdet er  midlertidig. </li>
+                  <li>Eventuelle prøvetidsbestemmelser. </li>
+                  <li>Arbeidstakerens rett til ferie og feriepenger og  reglene for fastsettelse av ferietidspunkt. En henvisning til ferieloven er tilstrekkelig.</li>
+                  <li>Arbeidstakerens og arbeidsgiverens oppsigelsesfrister.</li>
+                  <li>Lønn, utbetalingsmåte og tidspunkt for lønnsutbetaling.</li>
+                  <li>Eventuell pensjonsinnbetaling og andre godtgjørelser som ikke inngår i lønnen.</li>
+                  <li>Lengden og plasseringen av den avtalte daglige  og ukentlige arbeidstid. </li>
+                  <li>Lengde av pauser.</li>
+                  <li>Eventuell avtale om særlige arbeidstidsordninger, eksempelvis skiftarbeid.</li>
+                  <li>Opplysninger om eventuelle tariffavtaler som regulerer arbeidsforholdet.</li>
+
+
+                    
+                </ul>
+
+            </div><!-- /content -->
+
+        </div> <!-- close page -->
+
+
+
+        <!-- 1.4 OPPSIGELSE I PRØVETID -->
+
+
+
+        <div data-role="page" id="no_oppsigelse" title="Oppsigelse i prøvetid">
+
+            <div data-role="header" data-theme="a" data-position="fixed" data-tap-toggle="false" data-id="stickyheader"> 
+                <h1 class="logo">&nbsp;</h1>
+            </div>
+
+            <div data-role="content">
+                <h3>Oppsigelse</h3>
+
+                <br />
+                <ul>    
+                  <li>Det gjelder en gjensidig oppsigelsesfrist på 14 dager for arbeidstaker i prøvetid. Oppsigelsestiden løper fra dato til dato.</li>
+                  <li>Oppsigelsestid etter prøvetid er etter loven minst 1 måned og løper fra den første i den påfølgende måned.</li>
+                  <li>Prøvetid må være skriftlig avtalt og kan ikke vare utover 6 måneder. </li>
+                  <li>Oppsigelsen må være saklig begrunnet i den ansattes eller virksomhetens forhold.</li>
+
+                  <li>Den ansatte bør ha fått advarsler dersom det gjelder forhold relatert til den ansatte.</li>
+                  <li>Det må avholdes drøftelsesmøte før arbeidsgiver fatter beslutning om oppsigelse.</li>
+                  <li>En oppsigelse må være skriftlig og inneholde et minimum av informasjon til den ansatte, eksempelvis hvordan man skal gå frem dersom man er uenig i oppsigelsen.</li>
+                  <li>Arbeidstaker har rett til å stå i stilling i oppsigelsesperioden og så lenge forhandlinger pågår, dvs. utføre arbeid og motta lønn. </li>
+                  <li>Oppsigelsesbrevet må leveres personlig eller sendes rekommandert.</li>
+                  <li>Arbeidstakeren har krav på å få en attest.</li>
+
+                    
+                </ul>
+
+            </div><!-- /content -->
+
+        </div> <!-- close page -->
+
+
+
+
+
+
+
+
+        <!-- 1.6 PERMITTERING -->
+
+
+
+        <div data-role="page" id="no_permittering" title="Permittering">
+
+            <div data-role="header" data-theme="a" data-position="fixed" data-tap-toggle="false" data-id="stickyheader"> 
+                <h1 class="logo">&nbsp;</h1>
+            </div>
+
+            <div data-role="content">
+                <h3>Permittering</h3>
+
+                <br />
+                <ul>    
+                  <li>Permittering benyttes i de tilfeller der  arbeidsgiver i en begrenset periode ikke kan beskjeftige en ansatt. Eksempelvis  ved ordremangel.  </li>
+                  <li>Før permittering av ansatte iverksettes, skal de  ansatte gis minst 14 dagers skriftlig varsel. I særlige tilfeller er fristen  kortere.</li>
+                  <li>Varslet skal angi den antatte varigheten av  permitteringen.</li>
+                  <li>Den ansatte fritas fra sin arbeidsplikt og  arbeidsgiver vil ikke ha lønnsplikt i denne perioden.</li>
+                  <li>Arbeidsgiver har likevel lønnsplikt i arbeidsgiverperioden.</li>
+                  <li>Arbeidstaker vil på nærmere bestemte vilkår  kunne ha en rett til dagpenger fra folketrygden i en periode på inntil 26 uker.</li>
+                  <li>Permitteringer kan som hovedregel ikke benyttes  i mer enn 6  måneder.</li>
+                  <li>Ved varig mangel på oppdrag skal oppsigelse  benyttes.</li>
+                </ul>
+               
+
+            </div><!-- /content -->
+
+        </div> <!-- close page -->        
+
+
+
+        <!-- 1.7 Innleie av arbeidskraft -->
+
+
+
+        <div data-role="page" id="no_vikarbyradirektivet" title="Vikarbyrådirektivet">
+
+            <div data-role="header" data-theme="a" data-position="fixed" data-tap-toggle="false" data-id="stickyheader"> 
+                <h1 class="logo">&nbsp;</h1>
+            </div>
+
+            <div data-role="content">
+                <h3>Innleie av arbeidskraft</h3>
+
+                <br />
+                <ul>    
+                  <li>Innleie fra virksomhet som har som formål å drive utleie (bemanningsforetak) er tillatt i samme utstrekning som det kan avtales midlertidig ansettelse, jf. arbeidsmiljølovens § 14-12.</li>
+                  <li>Innleie fra virksomhet som ikke har som formål å drive utleie (produksjonsbedrift), er tillatt når den innleide arbeidstaker er fast ansatt hos utleier. For at en virksomhet skal betraktes som en produksjonsbedrift er det blant annet et krav om at utleieaktiviteten ikke omfatter mer enn 50% av de fast ansatte hos utleier, jf. arbeidsmiljølovens § 14-13.</li>
+                  <li>Ved innleie av arbeidskraft fra bemanningsforetak skal bemanningsforetaket sørge for at utleid arbeidstaker minst sikres de vilkår som ville kommet til anvendelse dersom arbeidstaker hadde vært ansatt hos innleier for å utføre samme arbeid (likebehandlingsprinsippet). Med vilkår menes eksempelvis samme lønn, bonusordning, arbeidstid, overtidsordning, ferie og feriepenger. </li>
+                  <li>Innleid arbeidstaker vil ha rett til samme  tilgang til felles goder og tjenester hos innleier som innleievirksomhetens egne ansatte.</li>
+                  <li>Pensjon omfattes ikke av likebehandlingsprinsippet.</li>
+                  <li>Bruken av innleie fra bemanningsbyrå skal drøftes minst en gang pr år mellom tillitsvalgt og arbeidsgiver (innleievirksomheten).</li>
+                  <li>Innleier er solidarisk ansvarlig overfor arbeidstaker dersom bemanningsforetaket ikke tilbyr arbeidstaker de arbeidsvilkår vedkommende hadde hatt som ansatt i innleievirksomheten.</li>
+                  <li>Alle som driver med utleie av arbeidskraft i Norge (bemanningsforetak) skal være registrert hos Arbeidstilsynet.</li>
+                </ul>
+
+            </div><!-- /content -->
+
+        </div> <!-- close page -->   
+
+
+
+       <!-- 2 - ENGELSK -->
+
+
+
+        <div data-role="page" id="english" title="English">
+
+            <!--    
+            <div data-theme="b" data-role="header" data-position="fixed">
+                    <h1>Fixed Header!</h1>
+            </div>
+            -->
+
+            <!--<div class="flexheader"></div>-->
+
+            <div data-role="header" data-theme="a" data-position="fixed" data-tap-toggle="false" data-id="stickyheader"> 
+                <h1 class="logo">&nbsp;</h1>
+            </div>
+
+            <div data-role="content">
+                
+
+                <br />
+                <ul data-role="listview" data-theme="a">    
+
+                    <li><a href="#en_employment" data-transition="slide">
+                            <h3>Employment</h3>
+                        </a></li>
+
+                    <li><a href="#en_employmentcontract" data-transition="slide">
+                            <h3>Employment contract</h3>
+                            <p>Minimum requirements</p>
+                        </a></li>
+
+                    <li><a href="#en_workinghours" data-transition="slide">
+                            <h3>Working hours </h3>
+                        </a></li>
+
+                    <li><a href="#en_staffing" data-transition="slide">
+                            <h3>Hire of employee</h3>
+                        </a></li>
+                        
+                    <!--<li><a href="#en_layoffs" data-transition="slide">
+                            <h3>Temporary Lay-off</h3>
+                        </a></li> -->
+
+                    <li><a href="#en_notice" data-transition="slide">
+                            <h3>Notice of termination</h3>
+                        </a></li>    
+
+                                                                   
+
+                    <li><a href="#en_summary" data-transition="slide"> 
+                            <h3>Summary dismissal</h3>
+                        </a></li>
+
+
+
+                </ul>
+
+            </div><!-- /content -->
+
+        </div> <!-- close page -->
+
+
+
+
+       <!-- 2.1 EMPLOYMENT -->
+
+
+
+        <div data-role="page" id="en_employment" title="Employment">
+
+            <div data-role="header" data-theme="a" data-position="fixed" data-tap-toggle="false" data-id="stickyheader"> 
+                <h1 class="logo">&nbsp;</h1>
+            </div>
+
+          <div data-role="content">
+            <h3>Employment</h3>
+
+            <ul>
+               <li>An employee shall be appointed permanently.</li>
+               <li>An employee may under special circumstances be appointed temporarily, e.g. as a  substitute.</li>
+               <li>An employer shall in general have an occupational pension plan for its employees.</li>
+               <li>An employer shall have an occupational injury insurance for its employees.</li>
+            </ul>
+            <p>&nbsp;</p>
+
+            </div><!-- /content -->
+
+        </div> <!-- close page -->   
+
+
+
+
+
+
+
+
+
+        <!-- 2.1 EMPLOYMENT CONTRACT -->
+
+
+
+        <div data-role="page" id="en_employmentcontract" title="Employment Contract">
+
+            <div data-role="header" data-theme="a" data-position="fixed" data-tap-toggle="false" data-id="stickyheader"> 
+                <h1 class="logo">&nbsp;</h1>
+            </div>
+
+            <div data-role="content">
+                <h3>Content of employment contract – minimum requirements </h3>
+
+<p>An  employment contract shall as a minimum regulate: </p>
+<ul>
+  <li>The identity of the parties.</li>
+  <li>The location of where the employment shall take place.</li>
+  <li>A short description of the work or the title of the employee, position or  category.</li>
+  <li>The date the employment will commence.</li>
+  <li>Anticipated length of the employment if the employment is temporary.</li>
+  <li>Probation period if applicable.</li>
+  <li>Vacation and vacation pay and the provisions on the time of the vacation. Reference to  the Vacation Act is adequate.</li>
+  <li>The length of the notice period.</li>
+  <li>Annual gross salary, disbursement and pay day.</li>
+  <li>Pension contributions and other remuneration that is not included in the annual gross salary.</li>
+  <li>The daily and weekly working hours.</li>
+  <li>Length of breaks.</li>
+  <li>Special working time arrangements such as shift work.</li>
+  <li>Applicable collective agreements.</li>
+</ul>
+
+            </div><!-- /content -->
+
+        </div> <!-- close page -->   
+
+
+
+
+
+
+
+     <!-- 2.2 LAYOFFS -->
+
+
+
+        <div data-role="page" id="en_layoffs" title="Employment Contract">
+
+            <div data-role="header" data-theme="a" data-position="fixed" data-tap-toggle="false" data-id="stickyheader"> 
+                <h1 class="logo">&nbsp;</h1>
+            </div>
+
+            <div data-role="content">
+                <h3>Temporary Lay-off</h3>
+
+
+                <br />
+                <ul>
+                  <li>Temporary  lay-offs may be used in situations where the employer for a limited period of  time is not able to engage the employee with work, e.g. due to lack of orders.</li>
+                  <li>Before  any lay-offs may be carried out, the employees are entitled to a 14 days notice.  In exceptional occasions, a shorter notice period may be applicable.</li>
+                  <li>The  notice shall specify the anticipated duration of the lay-off period.</li>
+                  <li>The  duration of a lay off period may in general not exceed more than 6 months.</li>
+                  <li>If  laid off one may in certain scenarios be entitled to a daily cash benefit from  the national insurance scheme for a period of up to 26 weeks.</li>
+                  <li>If  lack of orders is permanent, ordinary dismissal is required. </li>
+
+                    
+                </ul>
+
+            </div><!-- /content -->
+
+        </div> <!-- close page -->   
+
+
+
+
+
+
+
+     <!-- 2.3 Notice of termination 1 -->
+
+
+
+        <div data-role="page" id="en_notice" title="Notice of termination">
+
+            <div data-role="header" data-theme="a" data-position="fixed" data-tap-toggle="false" data-id="stickyheader"> 
+                <h1 class="logo">&nbsp;</h1>
+            </div>
+
+            <div data-role="content">
+                <h3>Notice of termination</h3>
+
+
+                <br />
+                <ul>
+                  <li>The length of the notice period during the probation period is normally 14 days and commences on the day the notice was given. </li>
+                  <li>Probation periods must be regulated in writing and shall not exceed 6 months.</li>
+                  <li>The length of the notice period after the probation period is minimum 1 month, and commences on the first day in the following month.</li>
+                  <li>The termination shall be based on reasonable and objective grounds and based on circumstances related to the undertaking or the employee.</li>
+                  <li>If the termination is based on circumstances related to the employee, the employee should be given warnings in advance.</li>
+                  <li>A consultation meeting shall be arranged before the employer decides to dismiss the employee.</li>
+                  <li>The termination letter shall be in writing and give the employee a minimum of information, such as how to  dispute a termination.</li>
+                  <li>The employee is entitled to remain in his/her position, perform work and receive salary, as long as negotiations are ongoing.</li>
+                  <li>The notice of termination must be handed to the employee in person or sent by registered letter.</li>
+                  <li>The employee is entitled to a letter of recommendation.</li>
+                </ul>
+
+            </div><!-- /content -->
+
+        </div> <!-- close page -->           
+
+
+
+
+          
+
+
+
+
+
+
+     <!-- 2.5 Hire of employee -->
+
+
+
+
+
+
+        <div data-role="page" id="en_staffing" title="Staffing agency">
+
+            <div data-role="header" data-theme="a" data-position="fixed" data-tap-toggle="false" data-id="stickyheader"> 
+                <h1 class="logo">&nbsp;</h1>
+            </div>
+
+            <div data-role="content">
+                <h3>Hire of employee</h3>
+
+
+                <br />
+                <ul>    
+                  <li>Hire of employees from undertakings whose object is to hire out labor (staffing agency) shall be permitted to the extent that temporary appointment of employees may be agreed, c.f. § 14-12.</li>
+                  <li>Hiring of employees from undertakings other than those whose object is to hire out labour shall be permitted when the hired employee is permanently employed by the company that hire out the employee. In order to say that an undertaking may be said not to have the object of hiring out labour, not more than 50 per cent of the permanent employees of the hire out must be engaged in the hiring activity.</li>
+                  <li>Employees hired out shall be entitled to the same conditions as if the employee was hired in the hiring company. This includes bonus and performance related pay, working hours and overtime compensation, duration and location of breaks and rest periods, duration of vacation, vacation pay and compensation for work performed on bank holidays.</li>
+                  <li>Hired personnel are entitled to public goods and services provided by the hiring company as if they were hired directly.</li>
+                  <li>Pension is not included in the principle of equal treatment.</li>
+                  <li>Use of hired personnel shall be discussed at least once a year between the respective unions and the employer (hiring company).</li>
+                  <li>There is a joint and several liability between the hiring company and the staffing agency for the employee's working conditions.</li>
+                  <li>Staffing agenciess shall be registered with the Labour Inspection Authorities.</li>
+                </ul>
+
+            </div><!-- /content -->
+
+        </div> <!-- close page -->           
+
+
+
+
+
+     <!-- 2.6 Summary dismissal -->
+
+
+
+
+
+
+        <div data-role="page" id="en_summary" title="Summary dismissal">
+
+            <div data-role="header" data-theme="a" data-position="fixed" data-tap-toggle="false" data-id="stickyheader"> 
+                <h1 class="logo">&nbsp;</h1>
+            </div>
+
+            <div data-role="content">
+                <h3>Summary dismissal</h3>
+                <ul>
+                  <li>In the event of material breach of the employment contract the employer may give  the employee a summary dismissal.</li>
+                  <li>The summary dismissal must be based on grounds which relates to the employee.</li>
+                  <li>A discussion meeting with the employee shall be held if deemed possible, before the summary dismissal is given to the employee.</li>
+                  <li>The summary dismissal letter shall be in writing and give the employee a minimum of information, such as how to dispute a summary dismissal. The notice of termination must be handed to the employee in person or sent to the employee by registered letter.</li>
+                  <li>The summary dismissal must be handed to the employee within reasonable time after the material breach has been committed and revealed.</li>
+                  <li>In general, the employee is not entitled to remain in his/her position during the negotiation period. </li>
+                  <li>The employee is entitled to a letter of recommendation.</li>
+                </ul>
+
+            </div><!-- /content -->
+
+        </div> <!-- close page -->    
+
+
+
+
+
+     <!-- 2.7 Working hours -->
+
+
+        <div data-role="page" id="en_workinghours" title="Working hours">
+
+            <div data-role="header" data-theme="a" data-position="fixed" data-tap-toggle="false" data-id="stickyheader"> 
+                <h1 class="logo">&nbsp;</h1>
+            </div>
+
+            <div data-role="content">
+                <h3>Working hours </h3>
+                <ul>
+                  <li>Normal working hours are in general 9 hours within 24 hours and 40 hours within 7 days, and shall  mainly be carried out between 06.00 and 21.00 Monday to Friday.</li>
+                  <li>Work  performed beyond normal working hours shall in general be regarded as overtime  work. Overtime work shall be compensated with at least an additional 40% of overtime pay. </li>
+                  <li>The use of overtime may not exceed 10 hours during 7 days, 25 hours over four  consecutive weeks and 200 hours during 52 weeks, per employee. There may be  exceptions from this rule. </li>
+                  <li>Alternatively  working hours may apply, such as average calculation of working hours.</li>
+                  <li>Alternatively  working hours may apply, such as shift work.</li>
+                  <li>Per  24 hours the employee shall have at least 11 hours off-duty. </li>
+                  <li>The employer and employee may agree on working hours to the benefit of the employee.</li>
+                  <li>Collective agreements may regulate working hours applicable for the employer and employee.</li>
+                  <li>During  a period of seven days, the employee shall have a continuous off-duty period of  35 hours. </li>
+                </ul>
+
+            </div><!-- /content -->
+
+        </div> <!-- close page --> 
+
+
+
+
+
+
+
+
+
+        <!-- 9 - CONTACT -->
+
+
+        <div data-role="page" id="contact" title="Contact">
+
+            <div data-role="header" data-theme="a" data-position="fixed" data-tap-toggle="false" data-id="stickyheader"> 
+
+                <h1 class="logo">&nbsp;</h1>
+
+            </div>
+
+            <div data-role="content">
+                <h3>Contact</h3>
+
+                <table border="0" cellpadding="0" class="contacttable"> 
+                    <tbody>
+                        <tr>  
+                            <td><img src="images/contact_ofstad@2x.png" class="contact_img" /></td> 
+                            <td valign="bottom"><strong>Bjørn Ofstad</strong><br>
+                                Director/Advokat<br>
+                                <a href="mailto:bofstad@deloitte.no">bofstad@deloitte.no</a><br>
+                                +47 928 00 216
+
+
+                            </td>
+                        </tr> 
+                        <tr><td colspan="2">&nbsp;</td></tr>
+                        <tr>  
+                            <td><img src="images/contact_ghelvik@2x.png" class="contact_img" /></td> 
+                            <td valign="bottom"><strong>Gro Forsdal Helvik</strong><br>
+                                Partner/Advokat<br>
+                                 <a href="mailto:ghelvik@deloitte.no">ghelvik@deloitte.no</a><br>
+                                +47 971 49 676
+                            </td>
+                        </tr> 
+                        
+                    </tbody>
+                </table><br>
+
+               
+                <br>
+                <p align="center"><a href="http://www.deloitte.com/view/no_NO/no/tjenester/globalemployerservices/arbeidsrett/index.htm"><img src="images/Deloitte-200x37.png" alt="Deloitte - Arbeidsrett" width="100" height="19" /></a></p>
+
+            </div><!-- /content -->
+
+        </div> <!-- close page -->
+
+
+
+
+        <!-- 10 - DISCLAIMER -->
+
+
+        <div data-role="page" id="disclaimer" title="Disclaimer">
+
+            <div data-role="header" data-theme="a" data-position="fixed" data-tap-toggle="false" data-id="stickyheader"> 
+                <h1 class="logo">&nbsp;</h1>
+            </div>
+
+            <div data-role="content">
+
+                <h4>Disclaimer</h4>
+                <p>This application contains general information only, and none of Deloitte Touche Tohmatsu
+                    Limited, its member firms, or their related entities (collectively, the “Deloitte
+                    Network”) is, by means of this application, rendering professional advice or services.</p>
+
+                <p>Before making any decision or taking any action that may affect your finances or
+                    your business, you should consult a qualified professional adviser. No entity in the
+                    Deloitte Network shall be responsible for any loss whatsoever sustained by any person who relies on this communication.</p>
+
+    
+
+
+            </div><!-- /content -->
+
+        </div> <!-- close page -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script type="text/javascript">
+            var panel_content = $('#slidemenu').html();
+            var panel_container = '<div data-role="panel" id="mypanel" data-theme="d">' + panel_content + '</div>'; //data-position="fixed
+            $('[data-role="page"]').append(panel_container); //this is only needed in current test jquery mobile, because "A panel cannot be placed outside a page, but this constraint will be removed in a future version."
+            var button_panel = '<a href="#mypanel" data-shadow="false" data-iconshadow="false" data-icon="smico" data-iconpos="notext" data-ajax="false" data-corners="false" data-theme="b">Menu</a>';
+            var button_back = '<a data-rel="back" data-shadow="false" data-iconshadow="false" data-ajax="false" data-theme="backbutton" data-iconpos="notext">Tilbake</a>';
+            var button_home = '<a href="#home" data-shadow="false" data-iconshadow="false" data-ajax="false" data-icon="home" data-iconpos="notext">Hjem</a>';
+            $('[data-role="header"]').not('#homeheader').append(button_back + button_home)
+            //.find('.ui-btn-inner').remove();
+            //$(document).ready(function() {
+            $(document).delegate($('[data-role="page"]'), 'pageshow', function() {
+                $('[data-rel="back"]').find('.ui-btn-inner').remove();
+            });
+            //$('.headerbutton_back').find('.ui-btn-inner').remove();
+        </script>
+    </body>
+</html>
